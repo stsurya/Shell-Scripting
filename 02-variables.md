@@ -22,6 +22,8 @@ echo "Your name is $PERSON"
 Eg:
 `NAME="Zara Ali`
 
+- Variables of this type are called **scalar** variables. A scalar variable can hold only one value at a time.
+
 ### Accessing variables
 
 - To access the value stored in a variable, prefix its name with the dollar sign ($).
@@ -32,3 +34,13 @@ Eg:
 NAME="Zara Ali"
 echo $NAME
 ```
+
+### Read-only variable
+
+- Shell provides a way to mark variables as read-only by using the read-only command. After a variable is marked read-only, its value cannot be changed.
+
+### UnSetting Variable
+
+- Unsetting or deleting a variable directs the shell to remove the variable from the list of variables that it tracks. Once you unset a variable, you cannot access the stored value in the variable.
+
+`unset variable_name`
