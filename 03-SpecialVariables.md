@@ -9,3 +9,28 @@ Note:
 
 - "$*" and "$@" both will act the same unless they are enclosed in double quotes, "".
 - The "$*" special parameter takes the entire list as one argument with spaces between and the "$@" special parameter takes the entire list and separates it into separate arguments.
+
+**Example:**
+
+```
+for arg in "$*"; do
+    echo "$arg"
+done
+```
+
+output:
+`arg1 arg2 arg3`
+
+```
+for arg in "$@"; do
+    echo "$arg"
+done
+```
+
+output:
+
+```
+arg1
+arg2
+arg3
+```
