@@ -4,3 +4,8 @@
 4. $?: The exit status of the last command executed.
 5. $$: The process number of the current shell. For shell scripts, this is the process ID under which they are executing.
 6. $!: The process number of the last background command.
+
+Note:
+
+- $\* and $@ both will act the same unless they are enclosed in double quotes, "".
+- The "$*" special parameter takes the entire list as one argument with spaces between and the "$@" special parameter takes the entire list and separates it into separate arguments.
