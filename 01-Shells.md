@@ -38,3 +38,7 @@ Execute the above script
 - Shell has fewer features as compared to Bash.
 - We can use shebang, “#!/bin/sh” if we want to use sh.
 - Shell is less programmer-friendly as compared to Bash.
+
+## How to know i'm on which shell ?
+
+- Enter `ps` on your CLI.
