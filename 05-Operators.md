@@ -42,6 +42,10 @@ var=$(awk 'BEGIN {print 2.6 + 2}')
 echo $var
 ```
 
+```
+ echo $((10 + 2))
+```
+
 ### Relational Operators
 
 ```

@@ -2,7 +2,7 @@
 
 ### Defining arrays
 
-array_name=(value1 ... valuen)
+array_name=("value1" "value2" ... valuen)
 
 ### Accessing array
 

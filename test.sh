@@ -1,11 +1,10 @@
 #!/bin/bash
 
-for i in 1 2 3 4 5
+for ((i=0; i<5; i++ ))
 do
-    if [[ $i -eq 2 ]] 
-    then
-        echo "skipping number 2"
-        continue 2
-    fi
-    echo "i is equal to $i"
+    for ((j=0; j<5; j++ ))
+    do
+        echo -n "*" # Won't enter new line
+    done
+    echo
 done
