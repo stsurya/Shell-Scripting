@@ -22,6 +22,14 @@ do
 done
 ```
 
+```
+#!/bin/bash
+for (( i=1; i<=99; i+=2 ))
+do
+    echo $i
+done
+```
+
 ## Syntax of while loops in bash
 
 ```

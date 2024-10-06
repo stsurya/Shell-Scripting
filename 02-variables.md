@@ -44,3 +44,20 @@ echo $NAME
 - Unsetting or deleting a variable directs the shell to remove the variable from the list of variables that it tracks. Once you unset a variable, you cannot access the stored value in the variable.
 
 `unset variable_name`
+
+### read command
+
+This used to take input from user
+
+```
+read X
+read Y
+
+4
+2
+```
+
+```
+read X Y Z
+4 2 3
+```
