@@ -72,3 +72,26 @@ elif [ $X -lt $Y ]; then
     echo "X is less than Y"
 fi
 ```
+
+The -eq operator in Bash is specifically used for comparing integers, not strings. When you are comparing strings, you should use = or == instead.
+
+Here’s a breakdown:
+
+-eq: Used for checking if two integers are equal.
+Example: [ $num1 -eq $num2 ]
+= or ==: Used for checking if two strings are equal.
+Example: [ "$str1" = "$str2" ] or [ "$str1" == "$str2" ] (Both are valid in most cases, though = is more universally supported).
+
+**Example:**
+
+```
+read p
+
+if [ $p == "Y" ] || [ $p == "y" ]
+then
+    echo "YES"
+elif [ $p -eq "N" ] || [ $p -eq "n" ]
+then
+    echo "NO"
+fi
+```
